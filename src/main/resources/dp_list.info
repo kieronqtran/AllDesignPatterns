@@ -1,0 +1,25 @@
+Facade design pattern	16
+Template method pattern	17
+Flyweight	31
+Memento	34
+Composite	40
+Iterator	51
+Adapter	19
+Proxy	43
+
+Observer	22
+Visitor pattern	26
+Decorator	29
+
+Dependency Injection	36
+
+Mediator	39
+
+Strategy	45
+State	46
+
+
+Bridge	48
+Command	49
+The Chain of Responsibility	52
+Interpreter
