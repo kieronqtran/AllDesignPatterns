@@ -1,6 +1,8 @@
 package creational;
 
-import creational.abstractfactory.*;
+import creational.abstractfactory.CarFactory;
+import creational.abstractfactory.PhoneFactory;
+import creational.abstractfactory.Product;
 import creational.builder.Employee;
 import creational.builder.EmployeeBuilder;
 import creational.factory.Patient;
@@ -14,40 +16,39 @@ import java.util.Date;
  * Created by CoT on 10/16/17.
  */
 public class Main {
-    public static void main(String[] args){
-        //Singleton
-        Singleton singleton = Singleton.getInstance();
-        singleton.hello();
+  public static void main(String[] args) {
+    // Singleton
+    Singleton singleton = Singleton.getInstance();
+    singleton.hello();
 
+    // Factory method
+    Patient patient = PatientFactory.create();
+    patient.setName("Henry");
 
-        //Factory method
-        Patient patient = PatientFactory.create();
-        patient.setName("Henry");
+    // Abstract factory
+    PhoneFactory phoneFactory = new PhoneFactory();
+    Product phone = phoneFactory.create();
 
-        //Abstract factory
-        PhoneFactory phoneFactory = new PhoneFactory();
-        Product phone = phoneFactory.create();
+    CarFactory carFactory = new CarFactory();
+    Product car = carFactory.create();
 
-        CarFactory carFactory = new CarFactory();
-        Product car = carFactory.create();
+    // Builder
+    EmployeeBuilder employeeBuilder = new EmployeeBuilder();
+    Employee employee = employeeBuilder.setId("s12345").setName("Henry").setSalary(20000000).build();
+    System.out.println(employee.getName());
 
-        //Builder
-        EmployeeBuilder employeeBuilder =  new EmployeeBuilder();
-        Employee employee = employeeBuilder.setId("s12345").setName("Henry").setSalary(20000000).build();
-        System.out.println(employee.getName());
+    // Prototype
+    Order order = new Order("12345", new Date(), "Henry Nguyen");
 
-        //Prototype
-        Order order = new Order("12345", new Date(), "Henry Nguyen");
+    try {
+      Order order2 = order.clone();
+      order2.setCustomer("Henry Le");
+      System.out.println(order.getCustomer());
 
-        try {
-            Order order2 = order.clone();
-            order2.setCustomer("Henry Le");
-            System.out.println(order.getCustomer());
-
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
-
+    } catch (CloneNotSupportedException e) {
+      e.printStackTrace();
     }
+
+
+  }
 }
