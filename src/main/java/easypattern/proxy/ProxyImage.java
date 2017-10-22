@@ -5,6 +5,7 @@ package easypattern.proxy;
  */
 public class ProxyImage implements Image {
     private Image realImage;
+
     public void show() {
         System.out.println("Loading real image, please wait");
         realImage = new RealImage();

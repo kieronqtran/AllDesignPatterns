@@ -5,13 +5,13 @@ package complexpattern.interpreter;
  */
 public class OperandExpression implements Expression {
 
-    private String operand;
+  private String operand;
 
-    public OperandExpression(String operand) {
-        this.operand = operand;
-    }
+  public OperandExpression(String operand) {
+    this.operand = operand;
+  }
 
-    public int intepret() {
-        return Integer.parseInt(operand);
-    }
+  public int intepret() {
+    return Integer.parseInt(operand);
+  }
 }

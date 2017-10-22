@@ -5,28 +5,28 @@ package complexpattern.command;
  */
 public class MoveObjectCommand implements Command {
 
-    private Shape shape;
-    private int x, y;
-    private int backupX, backupY;
+  private Shape shape;
+  private int x, y;
+  private int backupX, backupY;
 
-    public MoveObjectCommand(Shape shape, int x, int y) {
-        this.shape = shape;
-        this.x = x;
-        this.y = y;
-    }
+  public MoveObjectCommand(Shape shape, int x, int y) {
+    this.shape = shape;
+    this.x = x;
+    this.y = y;
+  }
 
-    public void execute() {
-        backupX = shape.getX();
-        backupY = shape.getY();
+  public void execute() {
+    backupX = shape.getX();
+    backupY = shape.getY();
 
-        shape.setX(x);
-        shape.setY(y);
+    shape.setX(x);
+    shape.setY(y);
 
 
-    }
+  }
 
-    public void undo() {
-        shape.setX(backupX);
-        shape.setY(backupY);
-    }
+  public void undo() {
+    shape.setX(backupX);
+    shape.setY(backupY);
+  }
 }

@@ -40,11 +40,11 @@ public class Application {
         this.state = state;
     }
 
-    public void saveToMemento(){
+    public void saveToMemento() {
         this.memento.setState(this.state);
     }
 
-    public void restoreFromMemento(){
+    public void restoreFromMemento() {
         this.state = this.memento.getState();
     }
 

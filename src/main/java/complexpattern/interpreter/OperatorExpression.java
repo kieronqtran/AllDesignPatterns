@@ -16,7 +16,7 @@ public class OperatorExpression implements Expression {
     }
 
     public int intepret() {
-        switch (operator){
+        switch (operator) {
             case '+':
                 return leftOperand.intepret() + rightOperand.intepret();
             case '-':

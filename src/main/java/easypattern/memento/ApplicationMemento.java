@@ -5,13 +5,13 @@ package easypattern.memento;
  */
 public class ApplicationMemento {
 
-    private String state;
+  private String state;
 
-    public String getState() {
-        return state;
-    }
+  public String getState() {
+    return state;
+  }
 
-    public void setState(String state) {
-        this.state = state;
-    }
+  public void setState(String state) {
+    this.state = state;
+  }
 }

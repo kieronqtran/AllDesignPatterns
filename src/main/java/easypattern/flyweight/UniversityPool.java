@@ -9,13 +9,12 @@ import java.util.Map;
 public class UniversityPool {
     private static Map<String, University> pool = new HashMap<String, University>();
 
-    public static University getUniversity(String code){
-        if(pool.get(code)==null){
+    public static University getUniversity(String code) {
+        if (pool.get(code) == null) {
             University university = new University(code);
             pool.put(code, university);
 
             return university;
-        }
-        else return pool.get(code);
+        } else return pool.get(code);
     }
 }

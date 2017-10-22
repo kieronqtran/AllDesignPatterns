@@ -5,11 +5,11 @@ package easypattern.facade;
  */
 public class Waiter {
 
-    public void takeOrder(){
+    public void takeOrder() {
         System.out.println("Take order");
     }
 
-    public void serveDish(){
+    public void serveDish() {
         System.out.println("Serve dishes");
     }
 }

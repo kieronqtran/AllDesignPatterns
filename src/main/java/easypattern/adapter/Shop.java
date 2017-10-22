@@ -5,5 +5,5 @@ package easypattern.adapter;
  */
 public interface Shop {
 
-    public void sell();
+  void sell();
 }

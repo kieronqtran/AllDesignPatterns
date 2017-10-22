@@ -8,11 +8,10 @@ import java.util.List;
  */
 public class Subject {
 
+    List<Observer> observers = new ArrayList<Observer>();
     private String state;
 
-    List<Observer> observers = new ArrayList<Observer>();
-
-    public void addMember(Observer observer){
+    public void addMember(Observer observer) {
         observers.add(observer);
     }
 
@@ -23,7 +22,7 @@ public class Subject {
     public void setState(String state) {
         this.state = state;
 
-        for(Observer observer: observers){
+        for (Observer observer : observers) {
             observer.beingNotified();
         }
 

@@ -3,10 +3,15 @@ package easypattern.facade;
 /**
  * Created by CoT on 10/16/17.
  */
-public class RestaurentFacade {
+public class RestaurantFacade {
 
     private Chef chef;
     private Waiter waiter;
+
+    public RestaurantFacade(Chef chef, Waiter waiter) {
+        this.chef = chef;
+        this.waiter = waiter;
+    }
 
     public Chef getChef() {
         return chef;
@@ -24,19 +29,15 @@ public class RestaurentFacade {
         this.waiter = waiter;
     }
 
-    public RestaurentFacade(Chef chef, Waiter waiter) {
-        this.chef = chef;
-        this.waiter = waiter;
-    }
-
-    public void serveDish(){
+    public void serveDish() {
         waiter.serveDish();
     }
-    public void takeOrder(){
+
+    public void takeOrder() {
         waiter.takeOrder();
     }
 
-    public void cook(){
+    public void cook() {
         chef.cook();
     }
 }

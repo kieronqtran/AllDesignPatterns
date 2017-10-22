@@ -5,9 +5,9 @@ package easypattern.adapter;
  */
 public class VeryOldShopAdapter implements Shop {
 
-    private VeryOldShop oldShop = new VeryOldShop();
+  private VeryOldShop oldShop = new VeryOldShop();
 
-    public void sell() {
-        oldShop.soldAnItem();
-    }
+  public void sell() {
+    oldShop.soldAnItem();
+  }
 }

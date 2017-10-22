@@ -5,5 +5,5 @@ package complexpattern.visitor;
  */
 public abstract class Person {
 
-    public abstract void invite(TeachingVisitor visitor);
+  public abstract void invite(TeachingVisitor visitor);
 }

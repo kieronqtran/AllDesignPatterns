@@ -5,7 +5,7 @@ package easypattern.adapter;
  */
 public class VeryOldShop {
 
-    public void soldAnItem(){
+    public void soldAnItem() {
         System.out.println("Sold an item");
     }
 }

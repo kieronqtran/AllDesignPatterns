@@ -5,20 +5,21 @@ package complexpattern.chainofresponsibility;
  */
 public abstract class Post {
 
-    private Post next;
+  private Post next;
 
-    public Post getNext() {
-        return next;
-    }
+  public Post getNext() {
+    return next;
+  }
 
-    public void setNext(Post next) {
-        this.next = next;
-    }
+  public void setNext(Post next) {
+    this.next = next;
+  }
 
-    public abstract void write();
-    public void writeAndPost(){
-        if(next!=null)
-            this.next.writeAndPost();
-        write();
-    }
+  public abstract void write();
+
+  public void writeAndPost() {
+    if (next != null)
+      this.next.writeAndPost();
+    write();
+  }
 }

@@ -13,11 +13,10 @@ public class MyLecturerList implements Iterator {
     private int currentItem = 0;
 
     public boolean hasNext() {
-        if(currentItem>=lecturers.size()){
+        if (currentItem >= lecturers.size()) {
             currentItem = 0;
             return false;
-        }
-        else
+        } else
             return true;
     }
 

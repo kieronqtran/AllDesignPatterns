@@ -5,7 +5,7 @@ package complexpattern.command;
  */
 public class Shape {
 
-    private int x,y;
+    private int x, y;
 
     public Shape(int x, int y) {
         this.x = x;

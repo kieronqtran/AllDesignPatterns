@@ -5,7 +5,7 @@ package creational.factory;
  */
 public class PatientFactory {
 
-    public static Patient create(){
-        return new Patient();
-    }
+  public static Patient create() {
+    return new Patient();
+  }
 }

@@ -5,5 +5,5 @@ package complexpattern.strategy;
  */
 public interface OrderService {
 
-    public void saveOrder();
+  void saveOrder();
 }

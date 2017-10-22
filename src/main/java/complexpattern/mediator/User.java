@@ -18,7 +18,7 @@ public class User {
         this.name = name;
     }
 
-    public void send(String msg){
+  public void send(String msg) {
         Mediator.sendMessage(this, msg);
     }
 }

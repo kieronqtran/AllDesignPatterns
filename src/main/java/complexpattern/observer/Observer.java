@@ -5,11 +5,11 @@ package complexpattern.observer;
  */
 public class Observer {
 
-    public void subscribe(Subject subject){
+    public void subscribe(Subject subject) {
         subject.addMember(this);
     }
 
-    public void beingNotified(){
+    public void beingNotified() {
         System.out.println("I am notified");
     }
 }

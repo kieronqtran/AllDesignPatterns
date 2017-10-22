@@ -5,9 +5,9 @@ package complexpattern.state;
  */
 public class Fan {
 
-    private State state =  new OnState();
+    private State state = new OnState();
 
-    public void press(){
+    public void press() {
         state.press(this);
     }
 

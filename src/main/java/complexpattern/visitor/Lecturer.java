@@ -9,15 +9,15 @@ public class Lecturer extends Person {
         visitor.accept(this);
     }
 
-    public void teach(){
+    public void teach() {
         System.out.println("Teaching");
     }
 
-    public  void marking(){
+    public void marking() {
         System.out.println("Marking");
     }
 
-    public void invite(MarkingVisitor visitor){
+    public void invite(MarkingVisitor visitor) {
         visitor.accept(this);
     }
 }

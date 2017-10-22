@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class OrgUnit {
     private String name;
-    private List<OrgUnit> children =  new ArrayList<OrgUnit>();
+    private List<OrgUnit> children = new ArrayList<OrgUnit>();
 
     public OrgUnit(String name) {
         this.name = name;
