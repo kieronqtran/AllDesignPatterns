@@ -3,7 +3,7 @@
 ## Definition
 
 ## Example
-[Java Builder Example](builder/BuilderExample.java#L7)
+[Java Builder Example](BuilderExample.java#L7)
 
 ```Java
 Employee newEmployee = new Employee
