@@ -3,7 +3,7 @@
 ## Definition
 
 ## Example
-[Java Builder Example](https://github.com/kieronqtran/AllDesignPatterns/blob/master/src/main/java/practice/builder/BuilderExample.java#L7)
+[Java Builder Example](builder/BuilderExample.java#L7)
 
 ```Java
 Employee newEmployee = new Employee

@@ -3,7 +3,7 @@
 Lecturer: [Nguyen Ngoc Thanh](https://github.com/thanhnew2001)
 
 ## Table of Content
-- [Builder Pattern](src/main/java/practice/builder/README.md)
+- [Builder Pattern](src/main/java/practice/builder)
 
 ## Project is tested with:
 
