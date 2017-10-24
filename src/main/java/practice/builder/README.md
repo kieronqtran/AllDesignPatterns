@@ -1,21 +1,17 @@
 # Builder Pattern
 
+## Definition
+
+## Example
 [Java Builder Example](https://github.com/kieronqtran/AllDesignPatterns/blob/master/src/main/java/practice/builder/BuilderExample.java#L7)
 
 ```Java
-Employee newEmployee = new EmployeeBuilder()
-      .setId("1")
-      .setName("Mark Zuckerberg")
-      .setSalary(400000)
-      .build();
-```
-
-[Kotlin Builder Example](https://github.com/kieronqtran/AllDesignPatterns/blob/master/src/main/kotlin/practicekt/creational/builder/basic/Employee.kt#L5)
-
-```Kotlin
-val newEmployee: Employee = Employee.build {
-  id = "1"
-  name = "EmployeeName"
-  salary = 1000.0
- }
+Employee newEmployee = new Employee
+  .Builder("helloworld@gmail.com") // Have to fill in required field
+  .firstName("Mark") // Optional Field
+  .lastName("Zuckerberg")
+  .phone("0123456789")
+  .age(18)
+  .address("123 Nguyen Du")
+  .build(); // Validate the input value when return new instance
 ```
