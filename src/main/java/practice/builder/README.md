@@ -1,9 +1,10 @@
 # Builder Pattern
 
-## Definition
+**Definition**:
 
 ## Example
-[Java Builder Example](BuilderExample.java#L7)
+
+[Basic Example:](builder/BuilderExample.java#L7)
 
 ```Java
 Employee newEmployee = new Employee

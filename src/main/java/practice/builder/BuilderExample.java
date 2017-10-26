@@ -1,21 +1,13 @@
 package practice.builder;
 
 import practice.builder.basic.Employee;
+
 public class BuilderExample {
+
   public static void main(String[] args) {
     System.out.println("Builder Example:");
 
-//    Employee mark = new EmployeeBuilder()
-//      .setId("1")
-//      .setName("Mark Zuckerberg")
-//      .setSalary(400000)
-//      .build();
-//
-//    System.out.println("mark = " + mark);
-//    System.out.println("id = [" + mark.getId() + "]");
-//    System.out.println("name = [" + mark.getName() + "]");
-//    System.out.println("salary = [" + mark.getSalary() + "]");
-
+    // Basic Usage of a Builder pattern
     Employee newEmployee = new Employee
       .Builder("helloworld@gmail.com")
       .firstName("Mark")
@@ -25,6 +17,7 @@ public class BuilderExample {
       .address("123 Nguyen Du")
       .build();
 
+    System.out.println("Basic Example:");
     System.out.println("newEmployee = [" + newEmployee + "]");
     System.out.println("email = [" + newEmployee.getEmail() + "]");
     System.out.println("full-name = [" + newEmployee.getFullName() + "]");

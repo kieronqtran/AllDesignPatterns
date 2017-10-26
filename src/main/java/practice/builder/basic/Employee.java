@@ -1,6 +1,8 @@
 package practice.builder.basic;
 
+// This object is immutable
 public class Employee {
+
   private final String email; // Required
   private final String firstName; // Optional
   private final String lastName; // Optional
@@ -8,6 +10,7 @@ public class Employee {
   private final String phone; // Optional
   private final String address; // Optional
 
+  // Enforce to use the Builder when creating a new Employee Object
   private Employee(Builder builder) {
     this.email = builder.email;
     this.firstName = builder.firstName;
@@ -59,7 +62,7 @@ public class Employee {
 
     public Builder email(String email) {
       this.email = email;
-      return this;
+      return this; // A
     }
 
     public Builder firstName(String firstName) {

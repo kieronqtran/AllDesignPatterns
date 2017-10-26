@@ -2,6 +2,9 @@
 
 Lecturer: [Nguyen Ngoc Thanh](https://github.com/thanhnew2001)
 
+## NOTE:
+- This fork is [my](https://github.com/kieronqtran) practice about design pattern.
+
 ## Table of Content
 - [Builder Pattern](src/main/java/practice/builder)
 
